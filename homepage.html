@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-compatible" content ie-edge />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>welcome page</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="card mb-3">
+            <div class="card-body">
+                <form name="" method="" action="">
+                    <input type="file">
+                </form>
+            </div>
+    </header>
+    <!--end header-->
+
+    <!--ALL SECTIONS-->
+    <div class="row">
+        <!--side nav bar-->
+        <div class="col-3">
+            <div class="nav flex-column nav-pills mainMenu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-personalinfo-tab" data-toggle="pill" href="#v-pills-personalinformation"
+                    role="tab" aria-controls="v-pills-home" aria-selected="true">Personal information</a>
+                <a class="nav-link" id="v-pills-education-tab" data-toggle="pill" href="#v-pills-education" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Education</a>
+                <a class="nav-link" id="v-pills-languagestest-tab" data-toggle="pill" href="#v-pills-languagestest"
+                    role="tab" aria-controls="v-pills-messages" aria-selected="false">Languages and test</a>
+                <a class="nav-link" id="v-pills-personalexperience-tab" data-toggle="pill"
+                    href="#v-pills-professionalexperience" role="tab" aria-controls="v-pills-professionalexperience"
+                    aria-selected="false">Personal experiences</a>
+                <a class="nav-link" id="v-pills-documents-tab" data-toggle="pill" href="#v-pills-documents" role="tab"
+                    aria-controls="v-pills-documents" aria-selected="false">Documents</a>
+                <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Payments</a>
+            </div>
+        </div>
+        <!--end of side nav bar-->
+        <!--main page-->
+        <div class="col-9 card mb-3">
+            <div class="tab-content card-body" id="v-pills-tabContent">
+                <!--personal information begins-->
+                <div id="v-pills-personalinformation" class="tab-pane fade show active" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <form action="">
+                        <!--2 columns - Last name and First name-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!--Last name-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Last name</label>
+                                        <input placeholder="Your Last name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--First name-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">First name</label>
+                                        <input placeholder="Your First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--1 column for the rest of the form-->
+                            <div class="row">
+                                <div class="col">
+                                    <!--Address Line 1-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Adress line 1</label>
+                                        <input placeholder="Your Adress line 1">
+                                    </div>
+                                    <!--Address Line 2-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Adress line 2</label>
+                                        <input placeholder="Your Adress line 2">
+                                    </div>
+                                    <!--Postal code-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Postal code</label>
+                                        <input placeholder="Your Postal code">
+                                    </div>
+                                    <!--City-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">City</label>
+                                        <input placeholder="Your city">
+                                    </div>
+                                    <!--Country-->
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Country</label>
+                                            <!--Make sure the form has the autocomplete function switched off:-->
+                                            <div class="autocomplete" style="width:300px;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="Your country">
+                                            </div>
+                                        </div>
+
+                                    <!--Mobile phone-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Mobile phone</label>
+                                        <input placeholder="Your mobile phone">
+                                    </div>
+
+                                    <!--Date of birth-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Date of birth</label>
+                                        <input type="date" id="birthday" name="birthday"
+                                            placeholder=" Your date of birth">
+                                    </div>
+                                    <!--City of birth-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">City of birth</label>
+                                        <input placeholder=" Your city of birth">
+                                    </div>
+                                    <!--Country of birth-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Country of birth </label>
+                                        <!--Make sure the form has the autocomplete function switched off:-->
+                                        <div class="autocomplete" style="width:300px;">
+                                            <input id="myInput" type="text" name="myCountry"
+                                                placeholder="Your country of birth ">
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                </div>
+                            </div>
+                            <!--Button Save and Next -->
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-outline-primary">Save and Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--end of personal information form-->
+
+                <!--beginning of education form-->
+                <div id="v-pills-education" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-education">
+                    <form action="">
+                        <!--2 columns-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Current situation</h4>
+                                    <!--Diploma in progress-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Diploma in progress</label>
+                                        <input placeholder="Diploma in progress">
+                                    </div>
+                                    <!--Field of study-->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Field of study</label>
+                                        <input placeholder="Field of study">
+                                    </div>
+                                    <div class="col">
+                                        <!--Univeristy name-->
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Univeristy name</label>
+                                            <input placeholder="Univeristy name">
+                                        </div>
+                                        <!--Univeristy city-->
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Univeristy city</label>
+                                            <input placeholder="Univeristy city">
+                                        </div>
+                                        <!--Univeristy country-->
+                                        
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">University country</label>
+                                            <!--Make sure the form has the autocomplete function switched off:-->
+                                            <div class="autocomplete" style="width:300px;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="Your university country">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4>Completed degree</h4>
+                                                <!--Diploma obtained-->
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Diploma obtained</label>
+                                                    <input placeholder="Diploma obtained">
+                                                </div>
+                                                <!--Grades-->
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Grades</label>
+                                                    <input placeholder="Grades obtained">
+                                                </div>
+
+                                                <!--Graduation -->
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Graduation</label>
+                                                    <input type="date" placeholder=" Your graduation date">
+                                                </div>
+                                                <!--City of birth-->
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">City of birth</label>
+                                                    <input placeholder=" Your city of birth">
+                                                </div>
+                                                <!--Add diploma - file upload-->
+                                                <div class="form-group ">
+                                                    <div class="custom-file">
+                                                        <label class="custom-file-label" for="exampleFormControlInput1"
+                                                            style="text-align:left;width: 200px;">Add diploma</label>
+                                                        <input type="file"
+                                                            class="custom-file-input btn btn-outline-primary"
+                                                            id="customFile">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <!--Button Save and Next -->
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <button type="submit" class="btn btn-outline-primary">Save and
+                                                        Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--ending of educational form-->
+
+                <!--beginning of language-->
+                <div id="v-pills-languagestest" class="tab-pane fade" role="tabpanel"
+                    aria-labelledby="v-pills-languagestest">
+                    <form>
+                        <h5 class="text-center"> Languages</h5>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Language</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3"
+                                    placeholder="Choose a Language">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Level</label>
+                            <div class="col-sm-10">
+                                <select class="custom-select my-1 mr-sm-2 form-control" id="inlineFormCustomSelectPref">
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Fluent">Fluent</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="addMore">
+                                <i class="fa fa-plus-circle iconPosition" aria-hidden="true">
+                                    <label for="inputDescription" class="col-sm-2 col-form-label">Add Language</label>
+
+                                </i>
+
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <form>
+                        <h5 class="text-center"> Aptitude Tests</h5>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Aptitude Test*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Scores*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputDuration" class="col-sm-2 col-form-label">Date*</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control calander" id="inputDuration">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Save and Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--end of language and test-->
+
+                <!--beginning of professional experience-->
+                <div id="v-pills-professionalexperience" class="tab-pane fade" role="tabpanel"
+                    aria-labelledby="v-pills-professionalexperience">
+                    <form>
+                        <h5 class="text-center">Professional Experience</h5>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Title">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputJobTitle" class="col-sm-2 col-form-label">Type of Job</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputJobTitle" placeholder="Type of Job">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputDuration" class="col-sm-2 col-form-label">From</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control calander" id="inputDuration">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputDuration" class="col-sm-2 col-form-label">To</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control calander" id="inputDuration">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Currently employed
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputDescription" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea type="Description" class="form-control" rows="10" id="inputDescription"
+                                    placeholder="Insert Roles and Responsibilities"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="addMore">
+                                <i class="fa fa-plus-circle iconPosition" aria-hidden="true">
+                                    <label for="inputDescription" class="col-sm-2 col-form-label">Add Experience</label>
+                                </i>
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        No experience
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Save and Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--end of professional experience-->
+
+                <!--beginning of documents required-->
+                <div id="v-pills-documents" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-documents">
+                    <h2>Documents required</h2>
+                    <br> <br>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Resume</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Copy of diploma</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Copy of test
+                                scores</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Passport</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <hr class="solid">
+                    <h2>Other documents </h2>
+                    <br> <br>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Insurance
+                                certificate</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">VISA</label>
+                            <input type="file">
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form name="" method="" action=""><label for="exampleFormControlInput1">Entry permit</label>
+                            <input type="file">
+                        </form>
+                    </div>
+
+                </div>
+                <!--end of documents form-->
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--end of main page-->
+
+    </div>
+    <!--ending of all sections-->
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
